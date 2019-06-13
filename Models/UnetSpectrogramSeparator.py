@@ -4,7 +4,8 @@ import Utils
 from Utils import LeakyReLU
 import numpy as np
 import functools
-from tensorflow.contrib.signal.python.ops import window_ops
+#from tensorflow.contrib.signal.python.ops import window_ops
+from tensorflow.python.ops.signal import window_ops
 
 class UnetSpectrogramSeparator:
     '''

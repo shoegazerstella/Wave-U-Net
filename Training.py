@@ -12,7 +12,17 @@ import Test
 import Evaluate
 
 import functools
-from tensorflow.contrib.signal.python.ops import window_ops
+#from tensorflow.contrib.signal.python.ops import window_ops
+from tensorflow.python.ops.signal import window_ops
+
+# set gpu
+#os.environ['CUDA_VISIBLE_DEVICES']='1'
+#config = tf.ConfigProto(device_count = {'GPU': 1})
+#config.gpu_options.visible_device_list= '1' #only see the gpu 1
+
+# list available gpus
+from tensorflow.python.client import device_lib
+device_lib.list_local_devices()
 
 ex = Experiment('Waveunet Training', ingredients=[config_ingredient])
 

@@ -1,5 +1,6 @@
 import tensorflow as tf
-from tensorflow.contrib.signal.python.ops import window_ops
+#from tensorflow.contrib.signal.python.ops import window_ops
+from tensorflow.python.ops.signal import window_ops
 import numpy as np
 import os
 

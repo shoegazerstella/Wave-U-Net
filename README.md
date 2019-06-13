@@ -1,3 +1,7 @@
+# About this fork
+* Code adaptations to work on python3
+* Working Dockerfile with tensorflow-gpu + python3
+
 # Wave-U-Net
 Implementation of the [Wave-U-Net](https://arxiv.org/abs/1806.03185) for audio source separation.
 
